@@ -55,3 +55,7 @@ button {
   display: none;
   font-size: 9vh;
 }
+
+.reload {
+  display: none;
+}

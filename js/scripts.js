@@ -42,6 +42,7 @@ $(document).ready(function() {
       choicetracker = Math.abs(choicetracker)
       $('#finalchoice').text("Congratulations "+$("#q3").val()+"! Your randomly generated choice is: "+choices[choicetracker]);
       $('#finalchoice').fadeIn();
+      $('.reload').fadeIn();
     }
 
 

@@ -10,9 +10,11 @@
   </head>
   <body>
     <div class="jumbotron">
+      <a href="index.html">
       <h1>Unsure which epicodus class to take?</h1>
       <h2>answer these questions to get our best guess</h2>
       <h3>click me if you want a less serious suggestion</h3>
+      </a>
     </div>
     <form id="decide" action="index.html" method="post">
       <div class="radiobuttons well">
@@ -97,21 +99,20 @@
       <button type="submit" name="button">click me for a suggestion</button>
     </form>
     <div class="generate container well" id='result'>
-          <h2>We are generating your suggestion.</h2>
-          <h2>Please help us by quickly clicking this jockey.</h2>
+      <h2>We are generating your suggestion.</h2>
+      <h2>Please help us by quickly clicking this jockey.</h2>
     </div>
     <div class="jockey" id="jockey">
-
       <img src="img/jockey.jpg" alt="">
     </div>
     <div class="finalchoice container well" id="finalchoice">
       <div class="row">
         <div class="col-md-12">
-
         </div>
-
       </div>
-
+    </div>
+    <div class="reload">
+      <button type="button" name="button" id="reload" onclick="window.location.href='real-suggestions.html'">try again</button>
     </div>
   </body>
 </html>

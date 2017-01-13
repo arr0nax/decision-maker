@@ -69,6 +69,7 @@ $(document).ready(function() {
 
     $('#decide').fadeOut();
     $('#finalchoice').fadeIn();
+    $('.reload').fadeIn();
 
 
     $('#finalchoice').text("Congratulations "+$("#q6").val()+"! Your totally accurately assigned choice is: "+location.join(" or"));

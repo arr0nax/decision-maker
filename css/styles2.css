@@ -50,6 +50,9 @@ button {
   width: 30vh;
 }
 
+.reload {
+  display: none;
+}
 
 #finalchoice {
   display: none;
