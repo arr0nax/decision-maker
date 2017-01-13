@@ -1,0 +1,57 @@
+body {
+  background-image: url('../img/crossroads.jpg');
+  background-size: 100vh 100vw;
+  color: white;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px blue;
+  padding-left: 8vh;
+  padding-right: 8vh;
+}
+
+.jumbotron {
+  padding-left: 5vh;
+
+}
+
+input {
+  color: black;
+}
+
+
+
+button {
+  height: 20vh;
+  width: 50vw;
+  position: relative;
+  left: 25%;
+  font-size: 7vh;
+  color: black;
+}
+
+
+.col-md-6 img {
+  width: 30vw;
+  height: 30vw;
+}
+.row {
+  height: 100vh;
+}
+
+.well {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#result {
+  display: none;
+}
+
+#jockey img {
+  display: inline-block;
+  display: none;
+  width: 30vh;
+}
+
+
+#finalchoice {
+  display: none;
+  font-size: 9vh;
+}

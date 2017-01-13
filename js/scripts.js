@@ -10,10 +10,6 @@ $(document).ready(function() {
   var choicetracker = 0;
   var choices = ['ruby/rails','java/android','php/drupal','c#/.net','css/design']
 
-  $('.jumbotron').click(function() {
-    location.reload(true);
-  })
-
   $("form#decide").submit(function() {
     event.preventDefault();
     var q1 = $("input:radio[name=q1]:checked").val();
