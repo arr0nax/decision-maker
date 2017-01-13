@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title>Triangle</title>
+    <title>Epidecider</title>
   </head>
   <body>
     <div class="jumbotron">
       <h1>Unsure which epicodus class to take?</h1>
-      <h2>Ask a robot!</h2>
+      <h2>use a randomly generated selection by answering these simple questions</h2>
+      <h3>click me if you want to restart</h3>
     </div>
     <form id="decide" action="index.html" method="post">
       <div class="radiobuttons well">
@@ -77,23 +78,13 @@
         <input type="text" id="q4" value="">
       </div>
       <div class="radiobuttons well">
-        <div class="row">
         <label for="radiobuttons ">pick one</label>
+        <div class="row">
         <div class="radio col-md-6">
           <label>
             <input type="radio" name="q5" value="1">
             <img src="img/tom.jpg" alt="">
           </label>
-        </div>
-        <div class="radio col-md-6">
-          <label>
-            <input type="radio" name="q5" value="2">
-            <img src="img/iguana.jpg" alt="">
-          </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="radio col-md-6">
           <label>
             <input type="radio" name="q5" value="3">
             <img src="img/rose.jpg" alt="">
@@ -101,20 +92,27 @@
         </div>
         <div class="radio col-md-6">
           <label>
+            <input type="radio" name="q5" value="2">
+            <img src="img/iguana.jpg" alt="">
+          </label>
+          <label>
             <input type="radio" name="q5" value="4">
             <img src="img/koala.jpg" alt="">
           </label>
         </div>
       </div>
-    </div>
-    <button type="submit" name="button">whats wrong</button>
-    </form>
-    <div class="generate container well" id='result'>
       <div class="row">
-        <div class="col-md-12">
-
+        <div class="radio col-md-6">
+        </div>
+        <div class="radio col-md-6">
         </div>
       </div>
+    </div>
+    <button type="submit" name="button">click me for a suggestion</button>
+    </form>
+    <div class="generate container well" id='result'>
+          <h2>We are generating your suggestion.</h2>
+          <h2>Please help us by quickly clicking this jockey.</h2>
     </div>
     <div class="jockey" id="jockey">
 

@@ -8,6 +8,11 @@ $(document).ready(function() {
   var r = [r1,r2,r3,r4,r5];
   var counter = 0;
   var choicetracker = 0;
+  var choices = ['ruby/rails','java/android','php/drupal','c#/.net','css/design']
+
+  $('.jumbotron').click(function() {
+    location.reload(true);
+  })
 
   $("form#decide").submit(function() {
     event.preventDefault();
@@ -17,29 +22,30 @@ $(document).ready(function() {
     q3 = q3.length;
     var q4 = parseInt($("#q4").val());
     var q5 = $("input:radio[name=q5]:checked").val();
-    $("#result").text("click the jockey to generate your choice");
     total = [q1,q2,q3,q4,q5]
-    $('#decide').hide();
-    $('#result').show();
-    $('#jockey img').show();
+    $('#decide').fadeOut();
+    $('#result').fadeIn();
+    $('#jockey img').fadeIn();
     return total
 
   });
+
   $('#jockey').click(function() {
 
     if (counter <= 4) {
     choose(counter);
     counter = counter + 1;
-    var margin = choicetracker*100
+    var margin = Math.abs(choicetracker*2)
     var margin = margin.toString();
-    var margin = margin + "px"
+    var margin = margin + "vh"
     $('.jockey img').css({"margin-left": margin})
 
     } else if (counter > 4) {
-      $('#result').hide();
-      $('#jockey').hide();
-      $('#finalchoice').text("your randomly generated choice is:"+choicetracker);
-      $('#finalchoice').show();
+      $('#result').fadeOut();
+      $('#jockey').fadeOut();
+      choicetracker = Math.abs(choicetracker)
+      $('#finalchoice').text("Congratulations "+$("#q3").val()+"! Your randomly generated choice is: "+choices[choicetracker]);
+      $('#finalchoice').fadeIn();
     }
 
 
