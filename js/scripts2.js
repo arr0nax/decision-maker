@@ -52,10 +52,14 @@ $(document).ready(function() {
       console.log(choicetallies);
     var q5 = parseInt($("input:radio[name=q5]:checked").val());
       if (q5 === 1) {
+        choicetallies[0] = choicetallies[0]+1;
         choicetallies[3] = choicetallies[3]+1;
       }
       else {
         choicetallies[2] = choicetallies[2]+1;
+        choicetallies[4] = choicetallies[4]+1;
+        choicetallies[1] = choicetallies[1]+1;
+
       };
       console.log(choicetallies);
     var choice = getMaxOfArray(choicetallies);
