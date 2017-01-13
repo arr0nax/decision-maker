@@ -1,4 +1,20 @@
 .col-md-6 img {
-  width: 25vw;
-  height: 25vw;
+  width: 30vw;
+  height: 30vw;
+}
+.row {
+  height: 100vh;
+}
+
+#result {
+  display: none;
+}
+
+#jockey img{
+  display: none;
+  vertical-align: middle;
+}
+
+#finalchoice {
+  display: none;
 }
